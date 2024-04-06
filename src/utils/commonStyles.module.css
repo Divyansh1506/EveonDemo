@@ -1,0 +1,14 @@
+.parent_cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem 0;
+    width: 100%;
+}
+.btn{
+    background-color: #FEBD10;
+    padding: .6rem  1rem;
+    border-radius: 50px;
+    font-weight: 600;
+}

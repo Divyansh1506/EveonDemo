@@ -1,0 +1,383 @@
+.parent_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(233, 245, 255);
+}
+
+.main {
+    /* height: 70vh; */
+    background-color: #97733c;
+    width: 100%;
+    max-width: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 0;
+}
+
+.container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.h_1 {
+    font-size: 3rem;
+    font-family: 'gilroy';
+    line-height: 60px;
+    font-weight: 600;
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.h_2 {
+    font-size: 2.5rem;
+    font-family: 'gilroy';
+    line-height: 50px;
+    font-weight: 600;
+    text-align: start;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.container p {
+    font-size: 1.7rem;
+    font-family: 'gilroy';
+    line-height: 40px;
+    font-weight: 500;
+    text-align: center;
+    color: white;
+    letter-spacing: 1.5px;
+}
+
+.sec_cont {
+    padding: 4rem 10rem;
+    max-width: 100rem;
+}
+
+.sec_cont .top {
+    width: 70%;
+    padding: 2rem;
+}
+
+.sec_cont .center,
+.sec_cont .btm {
+    width: 100%;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.sec_cont .btm {
+    /* gap: 3rem; */
+    justify-content: space-between;
+
+}
+
+.sec_cont .center .lft,
+.sec_cont .center .rgt,
+.sec_cont .btm .lft,
+.sec_cont .btm .rgt {
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+.sec_cont .btm .lft,
+.sec_cont .btm .rgt {
+    border-radius: 25px;
+    width: 48%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sec_cont .btm .lft {
+    background-color: #acecd2;
+}
+
+.sec_cont .btm .rgt {
+    background-color: #d2bfed;
+}
+
+.third_cont {
+    width: 100%;
+    max-width: 100rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: antiquewhite; */
+}
+
+.third_cont .top {
+    width: 40%;
+    margin: 2rem .5rem;
+}
+
+.third_cont .btm {
+    width: 80%;
+}
+
+.third_cont .top .h_2 {
+    text-align: center;
+    line-height: normal;
+    color: #1b1b1b;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    background-color: #fff;
+    padding: 5rem 2rem;
+    border-radius: 25px;
+}
+
+.logo {
+    height: 80px;
+    /* border: 1px solid gray; */
+    width: 250px;
+    border-radius: 5px;
+    /* background-color : #acecd2; */
+}
+
+.image {
+    height: 100%;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 5rem 0rem;
+    border-radius: 25px;
+    justify-content: center;
+}
+
+.card {
+    /* height: 400px; */
+    width: 400px;
+    /* background-color: #d2bfed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cards .card .top {
+    display: flex;
+    justify-content: center;
+}
+
+.cards .card .center {
+    position: relative;
+}
+
+.cards .card .center p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 70%;
+}
+
+.cards .card .center h5 {
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+@media(max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+
+    .sec_cont {
+        padding: 3rem 1rem;
+    }
+}
+
+@media(max-width: 950px) {
+
+    .center,
+    .btm {
+        flex-direction: column;
+    }
+
+    .sec_cont .btm .lft,
+    .sec_cont .btm .rgt {
+        width: 100%;
+    }
+
+    .sec_cont .btm {
+        gap: 3rem;
+    }
+
+}
+
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .container .h_1 {
+        font-size: 2rem;
+        line-height: normal;
+    }
+
+    .container p {
+        font-size: 1.2rem;
+        line-height: normal;
+    }
+
+    .main {
+        padding: 6rem 0;
+    }
+
+    .sec_cont .center .lft,
+    .sec_cont .center .rgt,
+    .sec_cont .btm .lft,
+    .sec_cont .btm .rgt {
+        padding: 2rem;
+        font-size: 1.2rem;
+    }
+    .sec_cont .top {
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .sec_cont .top h2 {
+        line-height: normal;
+    }
+    .sec_cont .btm .lft .h_2,
+    .sec_cont .btm .rgt h3{
+        font-size: 2rem;
+    }
+    .sec_cont .btm .lft,
+    .sec_cont .btm .rgt {
+        gap: 0rem;
+    }
+
+}
+
+@media (min-width: 400px) and (max-width: 800px) {
+    .container .h_1 {
+        font-size: 1.5rem;
+        line-height: normal;
+    }
+
+    .container p {
+        font-size: .8rem;
+        line-height: normal;
+    }
+
+    .main {
+        padding: 4rem 0;
+    }
+
+    .sec_cont .center .lft,
+    .sec_cont .center .rgt,
+    .sec_cont .btm .lft,
+    .sec_cont .btm .rgt {
+        padding: 1.5rem;
+        font-size: .9rem;
+    }
+    .sec_cont .top {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .sec_cont .top h2 {
+        line-height: normal;
+    }
+    .sec_cont .btm .lft .h_2,
+    .sec_cont .btm .rgt h3{
+        font-size: 1.5rem;
+    }
+    .sec_cont .btm .lft,
+    .sec_cont .btm .rgt {
+        gap: 0rem;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .container .h_1 {
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    .container p {
+        font-size: .6rem;
+        line-height: normal;
+    }
+
+    .main {
+        padding: 2rem 0;
+    }
+
+    .sec_cont .center .lft,
+    .sec_cont .center .rgt,
+    .sec_cont .btm .lft,
+    .sec_cont .btm .rgt {
+        padding: 1rem;
+        font-size: .7rem;
+    }
+
+    .sec_cont .top {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .sec_cont .top h2 {
+        line-height: normal;
+    }
+    .sec_cont .btm .lft .h_2,
+    .sec_cont .btm .rgt h3{
+        font-size: 1.2rem;
+    }
+    .sec_cont .btm .lft,
+    .sec_cont .btm .rgt {
+        gap: 0rem;
+    }
+
+}
+
+
+
+/* LOGO */
+@media (min-width: 280px) and (max-width: 1350px) {
+    .third_cont .top {
+        width: 70%;
+        margin: 1rem .5rem;
+    }
+
+}
+
+@media (min-width: 280px) and (max-width: 500px) {
+    .top .h_2 {
+        font-size: 1rem;
+    }
+
+    .logos {
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .top .h_2 {
+        font-size: 1.5rem;
+    }
+
+    .logos {
+        padding: 3rem 2rem;
+    }
+}
